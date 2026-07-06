@@ -1,16 +1,16 @@
 class Amcli < Formula
   desc "Apple Music Command Line Interface - A powerful TUI for controlling Apple Music"
   homepage "https://github.com/juntaochi/amcli"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/juntaochi/amcli/releases/download/v0.2.1/amcli-v0.2.1-arm64-apple-darwin.tar.gz"
-      sha256 "ba0e7be340f42498f8d31d66351fdc098fa977b76a6e549ecc7d86beeb541194"
+      url "https://github.com/juntaochi/amcli/releases/download/v0.3.0/amcli-v0.3.0-arm64-apple-darwin.tar.gz"
+      sha256 "b0173bd6ad0873051229fbe3838dd168d38cd38aa9bb4ce49bbabed93dfd2696"
     else
-      url "https://github.com/juntaochi/amcli/releases/download/v0.2.1/amcli-v0.2.1-x86_64-apple-darwin.tar.gz"
-      sha256 "0b78b7cc0431f43a62bbcbdd64514b47195933215b0646a25ee5a9ab85fd4809"
+      url "https://github.com/juntaochi/amcli/releases/download/v0.3.0/amcli-v0.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "da84d86113ae7e01f834707a6d196caf4bfad0c4c5236222f8d6c1c3ded54219"
     end
   end
 
