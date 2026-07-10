@@ -1,20 +1,23 @@
+# typed: strict
+# frozen_string_literal: true
+
 class Amcli < Formula
-  desc "Apple Music Command Line Interface - A powerful TUI for controlling Apple Music"
+  desc "Apple Music Command-line Interface - A powerful TUI for controlling Apple Music"
   homepage "https://github.com/juntaochi/amcli"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
+
+  depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/juntaochi/amcli/releases/download/v0.3.0/amcli-v0.3.0-arm64-apple-darwin.tar.gz"
-      sha256 "b0173bd6ad0873051229fbe3838dd168d38cd38aa9bb4ce49bbabed93dfd2696"
+      url "https://github.com/juntaochi/amcli/releases/download/v0.3.1/amcli-v0.3.1-arm64-apple-darwin.tar.gz"
+      sha256 "92a8c3ca4d7d445a86827cded0a8d46c8b39d565ac5f24aea065a4b218abaea2"
     else
-      url "https://github.com/juntaochi/amcli/releases/download/v0.3.0/amcli-v0.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "da84d86113ae7e01f834707a6d196caf4bfad0c4c5236222f8d6c1c3ded54219"
+      url "https://github.com/juntaochi/amcli/releases/download/v0.3.1/amcli-v0.3.1-x86_64-apple-darwin.tar.gz"
+      sha256 "e7ef1f1a5543a619aebed93b8669b4b194397651df4d91a4ee48787439ae3f38"
     end
   end
-
-  depends_on :macos
 
   def install
     bin.install "amcli"
